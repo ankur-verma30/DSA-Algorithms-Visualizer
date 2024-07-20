@@ -20,7 +20,7 @@ def bubble_sort(array):
     
     for i in range(1,size): 
         for j in range( size-i):
-            if number[j]<number[j+1]:
+            if number[j]>number[j+1]:
                 number[j],number[j+1]=swap(number[j],number[j+1])
                 
         #function to show transition in swapping 
@@ -33,7 +33,7 @@ def bubble_sort(array):
 def main():
     #initialize the array
     for i in range(1,size+1):
-        number.append(i)
+        number.append(random.randint(1,300))
 
     #initial plot of numbers in graph
     #the vector position as x-axis and its corresponding value will be the height in the line
